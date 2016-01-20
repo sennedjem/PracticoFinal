@@ -19,6 +19,8 @@ class Cancion {
 	String genero
 	Integer idCancion
 	
+	new(){}
+	
 	new(String nombre, String canInc, String pripal, String segpal, String primPreg, String segPreg, String terPreg, 
 		String cuartaPreg, String primResp, String segResp, String terResp, String cuarResp, String genero){
 			this.nombre= nombre

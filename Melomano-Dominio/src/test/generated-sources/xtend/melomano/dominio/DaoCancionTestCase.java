@@ -42,7 +42,9 @@ public class DaoCancionTestCase {
       public CancionDao apply() {
         CancionDao _xblockexpression = null;
         {
-          DaoCancionTestCase.this.dao.deleteAll();
+          DaoCancionTestCase.this.dao.delete(DaoCancionTestCase.this.cancion1);
+          DaoCancionTestCase.this.dao.delete(DaoCancionTestCase.this.cancion2);
+          DaoCancionTestCase.this.dao.delete(DaoCancionTestCase.this.cancion3);
           DaoCancionTestCase.this.cancion1 = null;
           DaoCancionTestCase.this.cancion2 = null;
           DaoCancionTestCase.this.cancion3 = null;
@@ -144,7 +146,7 @@ public class DaoCancionTestCase {
         {
           DaoCancionTestCase.this.dao.save(DaoCancionTestCase.this.cancion1);
           DaoCancionTestCase.this.dao.save(DaoCancionTestCase.this.cancion2);
-          List<Cancion> canciones = DaoCancionTestCase.this.dao.getPorGenero("rock");
+          List<Cancion> canciones = DaoCancionTestCase.this.dao.getPorGenero("pop");
           final List<Cancion> _converted_canciones = (List<Cancion>)canciones;
           int _length = ((Object[])Conversions.unwrapArray(_converted_canciones, Object.class)).length;
           boolean _equals = Integer.valueOf(_length).equals(Integer.valueOf(2));

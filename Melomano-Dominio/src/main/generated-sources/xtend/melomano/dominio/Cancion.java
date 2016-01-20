@@ -34,6 +34,9 @@ public class Cancion {
   
   private Integer idCancion;
   
+  public Cancion() {
+  }
+  
   public Cancion(final String nombre, final String canInc, final String pripal, final String segpal, final String primPreg, final String segPreg, final String terPreg, final String cuartaPreg, final String primResp, final String segResp, final String terResp, final String cuarResp, final String genero) {
     this.nombre = nombre;
     this.cancionIncompleta = canInc;

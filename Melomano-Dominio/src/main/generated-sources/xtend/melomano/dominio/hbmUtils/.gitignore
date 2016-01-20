@@ -2,3 +2,11 @@
 /.Runner.java._trace
 /.ServiceCommand.java._trace
 /.SessionManager.java._trace
+/.HibernateRunner.xtendbin
+/.Runner.xtendbin
+/.ServiceCommand.xtendbin
+/.SessionManager.xtendbin
+/HibernateRunner.java
+/Runner.java
+/ServiceCommand.java
+/SessionManager.java

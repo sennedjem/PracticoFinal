@@ -35,7 +35,9 @@ te olvides que soy distinto de aquel, pero casi igual","años","encontrar","en q
 	@After
 	def void tearDown(){
 		SessionManager.runInSession[|
-		dao.deleteAll
+		dao.delete(cancion1)
+		dao.delete(cancion2)
+		dao.delete(cancion3)
 		cancion1=null
 		cancion2=null
 		cancion3=null
@@ -88,7 +90,7 @@ te olvides que soy distinto de aquel, pero casi igual","años","encontrar","en q
 		SessionManager.runInSession[|
 			dao.save(cancion1)
 			dao.save(cancion2)
-			var List<Cancion> canciones = dao.getPorGenero("rock")
+			var List<Cancion> canciones = dao.getPorGenero("pop")
 			assertTrue(canciones.length().equals(2))
 			assertTrue(canciones.contains(cancion1))
 			assertTrue(canciones.contains(cancion2))
