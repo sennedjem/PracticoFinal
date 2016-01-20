@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="melomano.dominio.Cancion" table="Cancion" >
+        <id name="idCancion" type="java.lang.Integer">
+            <column name="ID_CANCION" />
+            <generator class="identity" />
+        </id>
+        
+        <property name="nombre" column="Nombre" type="string" not-null="true" />
+        <property name="cancionIncompleta" column="CancionIncompleta" type="string" not-null="true" />
+        <property name="primeraPalabra" column="PrimeraPalabraAC" type="string" not-null="true" />
+        <property name="segundaPalabra" column="SegundaPalabraAC" type="string" not-null="true" />
+        <property name="primeraPregunta" column="PrimeraPregunta" type="string" not-null="true" />
+        <property name="segundaPregunta" column="SegundaPregunta" type="string" not-null="true" />
+        <property name="terceraPregunta" column="TerceraPregunta" type="string" not-null="true" />
+		<property name="cuartaPregunta" column="CuartaPregunta" type="string" not-null="true" />
+		<property name="primeraRespuesta" column="PrimeraRespuesta" type="string" not-null="true" />
+        <property name="segundaRespuesta" column="SegundaRespuesta" type="string" not-null="true" />
+        <property name="terceraRespuesta" column="TerceraRespuesta" type="string" not-null="true" />
+		<property name="cuartaRespuesta" column="CuartaRespuesta" type="string" not-null="true" />
+		<property name="genero" column="Genero" type="string" not-null="true" />
+        
+ </class>
+</hibernate-mapping>
