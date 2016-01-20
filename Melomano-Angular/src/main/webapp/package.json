@@ -1,9 +1,0 @@
-{
-  "name": "encuestas-angular",
-  "description": "Sistema de encuestas con AngularJS",
-  "version": "1.0.0",
-  "author": "sebastian",
-  "dependencies": {
-    "angular": "1.4.8"   
-  }
-}
